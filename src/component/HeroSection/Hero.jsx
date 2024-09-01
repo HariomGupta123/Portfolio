@@ -1,13 +1,8 @@
 import { Bio } from "../../Data/constants"
 import styled from 'styled-components';
 import Typewriter from "typewriter-effect";
-import pic from "../../image/github.jpeg"
+import pic from "../../image/github-removebg-preview (1).png"
 import HeroBgAnimation from "../HeroAnimation/index"
-
-
-
-
-
 
 
 const HeroContainer = styled.div`
@@ -30,9 +25,10 @@ position:absolute;
 display:flex;
 justify-content:end;
 top:50%;
+max-width:800px;
 right:0;
 bottom:0;
-left:45%;
+left:70%;
 overflow:hidden;
 width:100%;
 height:100%;
@@ -50,6 +46,7 @@ justify-content:space-between;
 align-items:center;
 width:100%;
 max-width:1100%;
+
 @media screen and (max-width:960px){
   flex-direction:column;
 }
@@ -63,6 +60,7 @@ order:1;
   margin-bottom:32px;
   display:flex;
   align-items:center;
+  
   flex-direction:column;
 }
 @media screen and (max-width:640px){
@@ -140,7 +138,8 @@ const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
- 
+  cursor: pointer;
+  margin-top:20px;
 
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(
@@ -166,7 +165,7 @@ const ResumeButton = styled.a`
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    cursor: poiter;
+    cursor: pointer;
     box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
   }
@@ -180,6 +179,7 @@ const ResumeButton = styled.a`
 const Image=styled.img`
 width:100%;
 height:100%;
+background-color:yellow;
 position:relative;
 border-radius:50%;
 max-width:400px;
@@ -196,6 +196,9 @@ ovject-position:center;
   max-height:280px;
 }
 `
+
+
+  
 function Hero() {
   return (
     <div id="about">
@@ -220,7 +223,9 @@ function Hero() {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="_blank">
-              Check Resume
+             
+                Check Resume
+           
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
@@ -228,6 +233,7 @@ function Hero() {
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
+    
     </div>
   );
 }

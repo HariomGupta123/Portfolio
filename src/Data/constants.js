@@ -1,14 +1,18 @@
-import git from "../../public/git.png"
-import des from "../../public/Dès Vu Technologies.png"
-import figma from "../../public/figma.171x256.png"
-import postman from "../../public/postman.497x512.png"
-import tailwind from "../../public/tailwind.png"
-import kagzpatra from "../../public/kagazpatra.jpg"
-import messanger from "../../public/messanger.png"
-import todo from "../../public/todo.png"
-import movieInfo from "../../public/movieInfo.png"
-import imagecover from "../../public/imageCover.jpg"
-import ecommerce from "../../public/ecommerce.png"
+import git from "/git.png";
+import resume from "/resume.pdf"
+import des from "/Dès Vu Technologies.png";
+import figma from "/public/figma.171x256.png";
+import postman from "/public/postman.497x512.png";
+import tailwind from "/public/tailwind.png";
+import kagzpatra from "/public/kagazpatra.jpg";
+import messanger from "/public/messanger.png";
+import todo from "/public/todo.png";
+import movieInfo from "/public/movieInfo.png";
+import imagecover from "/public/imageCover.png";
+import ecommerce from "/public/ecommerce.png";
+import kplstvu from "/public/kplvstu.jpg";
+import pu from "/public/logo_pu.png";
+import yashodhara from "/public/yashodhara.jpg"
 export const Bio = {
   name: "Hari Om Gupta",
   roles: ["Front end","developer", "Programmer"],
@@ -16,7 +20,7 @@ export const Bio = {
     "I am a motivated and versatile individual , always eager to tale on new challenges.with a passion for learning I am dedicated to delivered high qaulity time ",
   github: "https://github.com/HariomGupta123",
   resume:
-    "https://drive.google.com/drive/folders/1DOTrGSv2Vyzv_zmF_gDKCanRJjkbjzAz",
+    `${resume}`,
   linkedin: "https://www.linkedin.com/in/hariom-gupta-278300235/",
   twitter: "https://twitter.com/home",
   insta: "https://www.instagram.com/hariomg3432/",
@@ -206,25 +210,25 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C560BAQE4UC9Z_k3c7A/company-logo_200_200/0/1579422507409?e=1692230400&v=beta&t=HJssPsrwwkAJAsvFiVIYPdM8GzUuuSK5YlATKgLx3Bc",
+    img: `${pu}`,
     school: "Pokhara University, Pokhara, kaski",
-    date: "Oct 2021 - Sep 2025",
+    date: "2019 -2024",
     grade: "2.95 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in software Engineering at Pokhara university, Pokhara kaski. I have completed 4 semesters and have a CGPA of 2.75 .",
     degree: "software  Engineering",
   },
   {
     id: 1,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: `${kplstvu}`,
     school: "Kapilvastu Multiple Campus, kapilvastu",
-    date: "Apr 2017 - Apr 2019",
-    grade: "74.67",
+    date: "2017 - 2019",
+    grade: "75.67%",
     desc: "I completed my class 12 high school education at Kapilvastu multiple campus, Kapilvastu, where I studied Science with Computer Science.",
     degree: "ISC(XII), Science with Computer",
   },
   {
     id: 2,
-    img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
+    img: `${yashodhara}`,
     school: "Shree Yashodhara Ma Vi,kapilvastu",
     date: "Apr 2014 - Apr 2017",
     grade: "78.75%",

@@ -117,7 +117,7 @@ margin-bottom:10px;
  `;
 
 
-export default function ExperienceCard({ image,role,company,date,desc,skills,doc }) {
+export default function ExperienceCard({ image,role,company,date,Desc,skills,doc }) {
   return (
     <Card>
       <Top>
@@ -129,7 +129,7 @@ export default function ExperienceCard({ image,role,company,date,desc,skills,doc
         </Body>
       </Top>
       <Description>
-        {desc}
+        {Desc}
         {skills && (
           <>
             <br />

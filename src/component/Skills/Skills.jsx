@@ -1,4 +1,3 @@
-import React from 'react'
 import {skills} from "../../Data/constants"
 import styled from 'styled-components'
 const Container=styled.div`
@@ -109,7 +108,7 @@ function Skills() {
         <Title>Skills</Title>
         <Desc>
           Here are some of my skills on which i have been working on for the
-          past 2 years{" "}
+          past 3 years{" "}
         </Desc>
         <SkillsContainer>
           {skills.map((item,index) => (

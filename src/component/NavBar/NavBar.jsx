@@ -85,24 +85,25 @@ padding:0 6px;
 }
 `;
 const GithubButton = styled.a`
-   background-color:transparent;
-   color:${({theme})=> theme.primary};
-    border: 1.8px solid ${({ theme }) => theme.primary};
-    border-radius: 20px;
-    display: flex;
-    justify-items: center;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    height: 70%;
-    &:hover {
-      background-color: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};
-    }
-    @media screen and (max-width: 640px) {
-      font-size: 0.8rem;
-    }
+  background-color: transparent;
+  text-decoration: none;
+  color: ${({ theme }) => theme.primary};
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  height: 70%;
+  &:hover {
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 0.8rem;
+  }
 `;
 export const Span=styled.div`
 padding:0 4px;
@@ -154,7 +155,7 @@ function NavBar() {
               }}
             >
               <DiCssdeck size="3rem" />
-              <span style={{ fontWeight: "bold" }}>Portfolio</span>
+              <span style={{ fontWeight: "bold" }}>Hari Om</span>
             </a>
           </NavLogo>
           <MobileIcon onClick={() => setOpen(!open)}>

@@ -83,7 +83,7 @@ export default function Experience() {
                       image={experience.img}
                       role={experience.role}
                       company={experience.company}
-                      data={experience.date}
+                      date={experience.date}
                       Desc={experience.desc}
                       skills={experience?.skills}
                       doc={experience.doc}
