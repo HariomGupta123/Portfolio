@@ -15,14 +15,13 @@ import pu from "/public/logo_pu.png";
 import yashodhara from "/public/yashodhara.jpg"
 export const Bio = {
   name: "Hari Om Gupta",
-  roles: ["Front end","developer", "Programmer"],
+  roles: ["Front end", "developer", "Programmer"],
   description:
     "I am a motivated and versatile individual , always eager to tale on new challenges.with a passion for learning I am dedicated to delivered high qaulity time ",
   github: "https://github.com/HariomGupta123",
-  resume:
-    `${resume}`,
+  resume: `${resume}`,
   linkedin: "https://www.linkedin.com/in/hariom-gupta-278300235/",
-  twitter: "https://twitter.com/home",
+  twitter: "https://twitter.com/HariOmGupta32",
   insta: "https://www.instagram.com/hariomg3432/",
   faceBook: "https://www.facebook.com/profile.php?id=100026261811286",
 };
