@@ -117,34 +117,37 @@ margin-bottom:10px;
  `;
 
 
-export default function ExperienceCard({experience1}) {
+export default function ExperienceCard({ image,role,company,date,desc,skills,doc }) {
   return (
     <Card>
       <Top>
-        <Logo src={experience1.img} />
+        <Logo src={image} />
         <Body>
-          <Role>{experience1.role}</Role>
-          <Company>{experience1.Company}</Company>
-          <Duration>{experience1.date}</Duration>
+          <Role>{role}</Role>
+          <Company>{company}</Company>
+          <Duration>{date}</Duration>
         </Body>
       </Top>
       <Description>
-        {experience1.desc}
-        {experience1?.skills && (
+        {desc}
+        {skills && (
           <>
             <br />
             <Skills>
               <b>Skills: </b>
               <ItemWrapper>
-                {experience1.skills.map((skill,index) => (
-                  <Skill key={index}>{skill}</Skill>
-                ))}
+                {skills.map((skill, index) => (<Skill key={index}>{skill}</Skill> ))}
               </ItemWrapper>
             </Skills>
           </>
         )}
       </Description>
-      {experience1.doc && (<a href={experience1.doc}  target='new'> <Document src={experience1.doc} /></a>)}
+      {doc && (
+        <a href={doc} target="new">
+          {" "}
+          <Document src={doc} />
+        </a>
+      )}
     </Card>
   );
 }

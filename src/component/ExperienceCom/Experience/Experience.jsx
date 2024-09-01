@@ -78,7 +78,16 @@ export default function Experience() {
                     {index !== experience.length - 1 && <TimelineConnector />}
                   </TimelineSeperator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <ExperienceCard experience1={experience}/>
+                    <ExperienceCard
+                      experience1={experience}
+                      image={experience.img}
+                      role={experience.role}
+                      company={experience.company}
+                      data={experience.date}
+                      Desc={experience.desc}
+                      skills={experience?.skills}
+                      doc={experience.doc}
+                    />
                   </TimelineContent>
                 </TimelineItem>
               ))}
