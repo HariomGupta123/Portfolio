@@ -50,41 +50,41 @@ const Desc = styled.div`
   }
 `;
 
-const ToggleGroup = styled.div`
-  display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
-  color: ${({ theme }) => theme.primary};
+// const ToggleGroup = styled.div`
+//   display: flex;
+//   border: 1.5px solid ${({ theme }) => theme.primary};
+//   color: ${({ theme }) => theme.primary};
 
-  font-size: 16px;
-  border-radius: 12px;
-  font-weight: 500;
-  margin: 22px 0;
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-`;
-const ToggleButton = styled.div`
-  padding: 8px 18px;
-  cursor: pointer;
-  border-radius: 6px;
+//   font-size: 16px;
+//   border-radius: 12px;
+//   font-weight: 500;
+//   margin: 22px 0;
+//   @media (max-width: 768px) {
+//     font-size: 12px;
+//   }
+// `;
+// const ToggleButton = styled.div`
+//   padding: 8px 18px;
+//   cursor: pointer;
+//   border-radius: 6px;
 
-  ${({ active }) =>
-    active &&
-    `
-backgound-color: ${({ theme }) => theme.primary + 20};`}
+//   ${({ active }) =>
+//     active &&
+//     `
+// backgound-color: ${({ theme }) => theme.primary + 20};`}
 
-  &:hover {
-    backgound-color: ${({ theme }) => theme.primary + 8};
-  }
-  @media (max-width:768px){
-    padding:6px 8px;
-    border-radius:4px;
-  }
-`;
-const Divider = styled.div`
-  width: 1.5px;
-  background-color: ${({ theme }) => theme.primary};
-`;
+//   &:hover {
+//     backgound-color: ${({ theme }) => theme.primary + 8};
+//   }
+//   @media (max-width:768px){
+//     padding:6px 8px;
+//     border-radius:4px;
+//   }
+// `;
+// const Divider = styled.div`
+//   width: 1.5px;
+//   background-color: ${({ theme }) => theme.primary};
+// `;
 const CardContainer = styled.div`
   width: 800px;
   display: grid;
@@ -105,7 +105,6 @@ const CardContainer = styled.div`
   }
 `;
 export default function Project() {
-    const [toggle,setToggle]=useState('all');
 
   return (
     <Container id="projects">
@@ -115,49 +114,15 @@ export default function Project() {
           I have worked on a wide range of Project . Here are some of my
           Projects
         </Desc>
-        <ToggleGroup>
-          {toggle === "all" ? (
-            <ToggleButton active="true" value="all">
-              All
-            </ToggleButton>
-          ) : (
-            <ToggleButton value="all">All</ToggleButton>
-          )}
-
-          <Divider />
-          {toggle === "web app" ? (
-            <ToggleButton
-              active
-              value="web app"
-              onClick={() => setToggle("web app")}
-            >
-              web app
-            </ToggleButton>
-          ) : (
-            <ToggleButton onClick={() => setToggle("web app")}>
-              web apps
-            </ToggleButton>
-          )}
-
-          <Divider />
-          <ToggleButton>andriod apps</ToggleButton>
-          <Divider />
-          <ToggleButton>machine learning</ToggleButton>
-        </ToggleGroup>
       </Wrapper>
       <CardContainer>
-        {toggle === "all" &&
-          projects.map((Project, index1) => (
+      
+        {projects.map((project, index) => (
             <ProjectCard
-              key={index1}
-              Project={Project}
-              proImage={Project.image}
+              key={index}
+              Project={project}
+             
             />
-          ))}
-        {projects
-          .filter((item) => item.category === toggle)
-          .map((project, index) => (
-            <ProjectCard key={index} project={project} />
           ))}
       </CardContainer>
     </Container>

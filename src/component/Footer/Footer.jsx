@@ -1,8 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../Data/constants";
 import {
   FacebookRounded,
+  GitHub,
   Instagram,
   LinkedIn,
   Twitter,
@@ -104,6 +104,9 @@ const Footer = () => {
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">
             <Instagram />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display">
+           <GitHub/>
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>&copy; 2024 Hari Om Gupta. All rights reserved.</Copyright>

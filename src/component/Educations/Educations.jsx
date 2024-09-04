@@ -67,7 +67,7 @@ function Education() {
       <Container id="education">
         <Wrapper>
           <Title>Education</Title>
-          <Desc>Here are some of my Projects</Desc>
+          <Desc>Here are some of my Education</Desc>
           <TimeLineSection>
             <Timeline>
               {education.map((education, index) => (

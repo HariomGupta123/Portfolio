@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { projects } from '../../../Data/constants';
 const Card = styled.div`
@@ -44,7 +43,7 @@ const Date = styled.div`
 font-size:12px;
 font-weight:400;
 margin-left:2px;
-color:{({theme})=>theme.text_secondary+80};
+color:${({ theme }) => theme.text_secondary};
 @media (max-width:768px){
   font-size:10px;
 }

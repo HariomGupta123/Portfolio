@@ -56,6 +56,7 @@ const TimeLineSection = styled.div`
   width: 100%;
   max-width: 1000px;
   margin-top: 10px;
+  padding-bottom:30px;
   display: flex;
   flex-direction: column;
   align-items: center;

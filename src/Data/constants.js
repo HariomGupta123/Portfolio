@@ -8,7 +8,7 @@ import kagzpatra from "/public/kagazpatra.jpg";
 import messanger from "/public/messanger.png";
 import todo from "/public/todo.png";
 import movieInfo from "/public/movieInfo.png";
-import imagecover from "/public/imageCover.png";
+import imagecover from "/public/cover.png";
 import ecommerce from "/public/ecommerce.png";
 import kplstvu from "/public/kplvstu.jpg";
 import pu from "/public/logo_pu.png";
@@ -126,7 +126,7 @@ export const experiences = [
   {
     id: 0,
     img: `${des}`,
-    role: "Frontend Engineer Intern",
+    role: "Frontend Developer",
     company: "Des vu Technologies",
     date: "June 2023 - Present",
     desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
@@ -241,7 +241,7 @@ export const projects = [
   {
     id: 0,
     title: "KagazPatra",
-    date: "Apr 2023 -  aug 2024",
+    date: "Apr 2024 -  aug 2024",
     description:
       "A Kagazpatra made with React js, redux tool kit,nodes . Kagazpatra is a web-based application specifically crafted to simplify the process of generating essential referral formats required by Nepali government offices. Tailored for local users, Kagazpatra provides an intuitive platform for creating accurate and compliant documentation needed for citizenship applications and other official documents.",
     image: `${kagzpatra}`,
@@ -249,20 +249,7 @@ export const projects = [
     category: "web app",
     github: "https://github.com/rishavchanda/Podstream",
     webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rishav Chanda",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
+  
   },
 
   {
@@ -275,22 +262,10 @@ export const projects = [
     tags: ["Next Js", "Mongodb", "Pusher Js", "tailwind"],
     category: "web app",
     github: "https://github.com/HariomGupta123/messanger-clone",
-    webapp: "https://whatsapp-clone-rishav.web.app",
   },
+ 
   {
     id: 2,
-    title: "imageCover",
-    date: "Jan 2024",
-    description:
-      "A imageCover made with Next JS, neon,kinde,tanstack,shadcn/ui,uploadthing,strip,radix-ui/react-icons,@radix-ui/react-slot,kinde-oss/kinde-auth-nextjs . It has Phone Authentication. It has page users can drag and drop image and can fix in the iphone back cover as fixed . It has a page  where users can see thier fixed iphone cover and price,and can pay with  paypal . It has a login page where users can log in with their Google account .",
-    image: `${imagecover}`,
-    tags: ["Next Js", "Neon", "uploadthing", "shadcn/ui", "strip"],
-    category: "web app",
-    github: "https://github.com/HariomGupta123/ImageMobileCover",
-    webapp: "image-mobile-cover-p244.vercel.app/",
-  },
-  {
-    id: 3,
     title: "Todo Web App",
     date: "Dec 2022",
     description:
@@ -300,6 +275,18 @@ export const projects = [
     category: "web app",
     github: "https://github.com/HariomGupta123/TODO",
     webapp: "https://todo-delta-seven-11.vercel.app/",
+  },
+   {
+    id: 3,
+    title: "imageCover",
+    date: "Jan 2024",
+    description:
+      "A imageCover made with Next JS, neon,kinde,tanstack,strip,radix-ui/react-icons,@radix-ui/react-slot,kinde-oss/kinde-auth-nextjs . It has Phone Authentication. It has page users can drag and drop image and can fix in the iphone back cover as fixed . It has a page  where users can see thier fixed iphone cover and price,and can pay with  paypal . It has a login page where users can log in with their Google account .",
+    image: `${imagecover}`,
+    tags: ["Next Js", "Neon", "uploadthing", "shadcn/ui", "strip"],
+    category: "web app",
+    github: "https://github.com/HariomGupta123/ImageMobileCover",
+    webapp: "image-mobile-cover-p244.vercel.app/",
   },
   {
     id: 4,
