@@ -1,5 +1,5 @@
 import git from "/git.png";
-import resume from "/resume.pdf"
+import resume from "/Resume.pdf"
 import des from "/Dès Vu Technologies.png";
 import figma from "/public/figma.171x256.png";
 import postman from "/public/postman.497x512.png";
